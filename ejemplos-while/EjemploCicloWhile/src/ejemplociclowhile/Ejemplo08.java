@@ -29,8 +29,11 @@ public class Ejemplo08 {
         double calificacion;
         boolean bandera = true;
 
+        /*el contador en este codigo nos sirve para poder dividir por las veces 
+        que hayamos ingresado un valor*/
+        
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación:");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
@@ -39,14 +42,14 @@ public class Ejemplo08 {
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer)
 
             // proceso para salir del ciclo.
-            System.out.println("Ingrese si para salir");
+            System.out.println("Ingrese 1 para salir");
             String temporal = entrada.nextLine();
-            if (temporal.equals("si")) {
+            if (temporal.equals("1")) {
                 bandera = false;
             }
         }
         promedio_final = suma_total / contador;
-        System.out.printf("El promedio final es %.2f\n", promedio_final);
+        System.out.printf("\nEl promedio final es %.2f\n", promedio_final);
 
     }
 }

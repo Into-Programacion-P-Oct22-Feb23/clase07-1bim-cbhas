@@ -34,7 +34,7 @@ public class Ejemplo09 {
         while (contador <= limite_tabla){ // 1<=12 v
             operacion = tabla * contador; // operacion = 3*1 = 3
             
-            System.out.printf("%s%d*%d = %d\n", // ""3*1=3\n === > 3*1=3
+            System.out.printf("%s%d * %d = %d\n", // ""3*1=3\n === > 3*1=3
                     cadena, 
                     tabla, 
                     contador,

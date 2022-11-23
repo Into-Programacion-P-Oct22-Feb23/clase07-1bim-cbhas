@@ -29,11 +29,15 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
             if (calificacion > 20) {
+                /*la línea (36). nos sirve para hacer un 
+                control de valores, ya que si ingresamos un numero mayor a lo
+                        dicho, inmediatamente da = al limite que nsotros
+                                pusimos, y eso sería un control de valores*/
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
@@ -47,7 +51,7 @@ public class Ejemplo06 {
             }
         }
 
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        System.out.printf("\n\nSuma de calificaciones es %.2f\n", suma_total);
 
     }
 }
